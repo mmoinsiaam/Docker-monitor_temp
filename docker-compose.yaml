@@ -1,0 +1,13 @@
+services:
+  temp_checker:
+    build:
+      context: .
+      network: host
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    environment:
+      FROM: youremail@gmail.com
+      PASSWORD: 16digitapppasswordgmail
+      TO: youremail@gmail.com
+      TEMP_THRESHOLD: 70
